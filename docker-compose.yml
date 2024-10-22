@@ -1,0 +1,13 @@
+services:
+  telegram_cooldown:
+    container_name: telegram_cooldown
+    image: ghcr.io/caramelfur/telegram-cooldown
+    environment:
+      - SESSION_LOCATION=/data/session.json
+      - API_ID=
+      - API_HASH=
+      #- TIMEWINDOW_INITIAL=
+      #- TIMEWINDOW_COOLDOWN=
+      #- LIMIT=
+    volumes:
+      - ./data:/data

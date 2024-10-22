@@ -1,0 +1,7 @@
+.env
+.env.example
+docker-compose
+Dockerfile
+data
+node_modules
+.git
